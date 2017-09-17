@@ -1,0 +1,10 @@
+{
+    "name": "redditproject",
+    "description": "For fun and learning",
+    "version": "1.0.0",
+    "author": "James MacIvor",
+    "private": true,
+    "scripts": {
+        "postinstall": "npm install express"
+    }
+}

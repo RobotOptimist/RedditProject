@@ -47,12 +47,14 @@
                     })
             },
             triggerPosts() {
-                this.getSubRedditPosts();
                 this.showPosts = true;
             }
         },
         components: {
             "subreddit-posts": Posts
+        },
+        created() {
+            this.getSubRedditPosts();
         }
     }
 </script>
@@ -82,7 +84,6 @@
     .subreddit-posts {
         position: absolute;
         z-index: 1;
-        background-color: white;
         border: thin solid black;        
     }
     .close-posts {

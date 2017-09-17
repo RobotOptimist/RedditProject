@@ -1,5 +1,5 @@
 <template>
-    <div class="row">
+    <div class="row post-container">
         <div class="subreddit-post">
             <div class="col-md-6">
                 <a class="post-title" :href="post.url">Title: {{ post.title }}</a>
@@ -36,7 +36,8 @@
         height:140px;
         object-fit: contain;
     }
-    .subreddit-post {
+    .post-container {
         border: thin solid black;
+        background-color: white;
     }
 </style>
